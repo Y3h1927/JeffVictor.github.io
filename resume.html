@@ -209,6 +209,90 @@
                 grid-template-columns: 1fr;
             }
         }
+        /* Resume Introduction Section */
+.resume-intro-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    padding: 6rem 2rem 4rem;
+    margin-top: 4rem;
+}
+
+.resume-intro-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.resume-intro-header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.resume-tagline {
+    font-size: 1.1rem;
+    color: #007ced;
+    margin-bottom: 2rem;
+}
+
+.resume-intro-content {
+    max-width: 700px;
+}
+
+.resume-intro-content p {
+    color: #b5b5b5;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+.resume-quick-access {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #333;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.cv-download-btn {
+    background: #007ced;
+    color: #000;
+    padding: 0.9rem 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 4px;
+}
+
+.cv-download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 124, 237, 0.4);
+}
+
+.cv-download-btn i {
+    font-size: 0.9rem;
+}
+
+.cv-meta {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    .resume-intro-header h1 {
+        font-size: 2rem;
+    }
+    
+    .resume-quick-access {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -216,6 +300,42 @@
         <a href="index.html">← Back to Portfolio</a>
     </nav>
 
+    <section class="resume-intro-section">
+        <div class="resume-intro-wrapper">
+            <div class="resume-intro-header">
+                <h1 class="project-title">Resume</h1>
+                <p class="resume-tagline">
+                    Urban Planning • Geospatial AI • Environmental Monitoring
+                </p>
+            </div>
+
+            <div class="resume-intro-content">
+                <p>
+                    Forward-thinking urban planner specializing in Geospatial AI, 
+                    environmental monitoring, and data-driven urban systems. Combining 
+                    satellite imagery, machine learning, GIS, and Digital Twin technologies 
+                    to analyze and address complex urban and environmental challenges.
+                </p>
+                <p>
+                    Experience spans healthcare infrastructure planning, spatial development 
+                    strategies, predictive environmental modeling, and policy-oriented research 
+                    across government agencies and design firms.
+                </p>
+                
+                <div class="resume-quick-access">
+                    <a href="https://drive.google.com/file/d/1GKwqgznaEGd8YpbHQ9rRbmdw1Xw24T_o/view?usp=drive_link" 
+                       class="cv-download-btn" 
+                       target="_blank">
+                        <i class="fa-solid fa-download"></i> Download Full CV
+                    </a>
+                    <span class="cv-meta">PDF • Updated January 2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article class="project-content">
+    
     <section class="project-hero">
         <div class="hero-content">
             <div class="project-meta">Geospatial AI · 2024</div>
@@ -328,8 +448,7 @@
         </div>
 
         <a href="https://drive.google.com/file/d/1QcRmEqa-UtmDSFkfUoZsHfkX9thBgWXC/view?usp=drive_link" class="artifact-link">→ View Public Whitepaper (PDF, 25 pages)</a>
-        <a href="https://drive.google.com/file/d/1GKwqgznaEGd8YpbHQ9rRbmdw1Xw24T_o/view?usp=drive_link" class="artifact-link">→ View Technical Appendix (PDF, 6 pages)</a>
-
+       
     </article>
 
     <footer class="project-footer">
@@ -337,6 +456,4 @@
     </footer>
 
 </body>
-
 </html>
-
